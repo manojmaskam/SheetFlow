@@ -20,24 +20,23 @@ SheetFlow is a lightweight desktop utility built with Python that keeps an Excel
 ## 📁 Folder Structure
 
 SheetFlow/
-│
 ├── sheetflow/
 │   ├── db/
-│   │   ├── connection\_pool.py
-│   │   └── crud.py
+│   │   ├── connection_pool.py       # Database connection pool setup
+│   │   └── crud.py                  # All CRUD operations
 │   ├── excel/
-│   │   └── reader.py
+│   │   └── reader.py                # Reads Excel file into DataFrame
 │   ├── sql/
-│   │   └── export\_to\_excel.py
+│   │   └── export_to_excel.py       # Exports DB data back to Excel
 │   ├── watcher/
-│   │   └── excel\_watcher.py
-│   └── sync\_engine.py
+│   │   └── excel_watcher.py         # Watches Excel file for real-time updates
+│   └── sync_engine.py              # Core sync logic from Excel to MySQL
 │
-├── Appointments.xlsx            # Excel file (live source)
-├── config.ini                   # App configuration
-├── requirements.txt             # Dependencies
-├── README.md
-└── logs/
+├── Appointments.xlsx               # 📄 Live Excel file source
+├── config.ini                      # ⚙️ Configuration (DB, Excel paths)
+├── requirements.txt                # 📦 Project dependencies
+├── README.md                       # 📘 Project documentation
+└── logs/                           # 📁 Auto-generated logs folder
 
 ---
 
