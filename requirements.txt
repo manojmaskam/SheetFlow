@@ -2,4 +2,3 @@ pandas                 # For reading Excel files
 openpyxl               # Required by pandas to read .xlsx files
 mysql-connector-python # For MySQL connection + connection pooling
 watchdog               # For real-time Excel file change detection
-
